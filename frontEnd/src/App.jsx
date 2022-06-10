@@ -1,7 +1,7 @@
 import "./App.css";
 
 function App() {
-  return <div className="App">Multi_Author_Blog-App</div>;
+  return <div className="App">Multi Author Blogs</div>;
 }
 
 export default App;
