@@ -30,5 +30,14 @@
         }
       }
     }
+    .col-8 {
+      ul.link_list {
+        height: 75px;
+        transition: all 0.5s;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    }
   }
 }

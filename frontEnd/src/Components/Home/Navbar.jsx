@@ -15,7 +15,7 @@ const Navbar = () => {
           <div className="col-4">
             <div className="image_menubar">
               <Link className="image" to="/">
-                <img src="/design/images/logo1.png" alt="" />
+                <img src="/design/images/logo1.png" alt="logo" />
               </Link>
               <label className="menu_icon" htmlFor="toggle">
                 <BsListUl />
