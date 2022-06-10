@@ -1,0 +1,34 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  background-color: var(--main_bg);
+  box-shadow: var(--shadow_color);
+
+  .row {
+    .col-4 {
+      .image_menubar {
+        .menu_icon {
+          display: flex;
+        }
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      a.image {
+        margin-left: -8px;
+        width: 170px;
+        height: 40px;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
