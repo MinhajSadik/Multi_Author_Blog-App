@@ -9,9 +9,10 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <div id="navbar" className="navbar">
       <div className="container">
         <div className="row">
+          <input type="checkbox" id="toggle" />
           <div className="col-4">
             <div className="image_menubar">
               <Link className="image" to="/">
@@ -23,7 +24,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="col-8">
-            <ul className="link_list">
+            <ul className="link_list toggle">
               <li className="link_item">
                 <Link to="/about">About</Link>
               </li>
@@ -33,35 +34,37 @@ const Navbar = () => {
               <li className="link_item">
                 <Link to="/policy">Policy</Link>
               </li>
+              <div className="social_icon">
+                <li className="link_item">
+                  <Link to="/">
+                    <span>
+                      <FaGithubSquare />
+                    </span>
+                  </Link>
+                </li>
+                <li className="link_item">
+                  <Link to="/">
+                    <span>
+                      <ImLinkedin />
+                    </span>
+                  </Link>
+                </li>
+                <li className="link_item">
+                  <Link to="/">
+                    <span>
+                      <FaTwitterSquare />
+                    </span>
+                  </Link>
+                </li>
+                <li className="link_item">
+                  <Link to="/">
+                    <span>
+                      <FaFacebookSquare />
+                    </span>
+                  </Link>
+                </li>
+              </div>
             </ul>
-            <li className="link_item">
-              <Link to="/">
-                <span>
-                  <FaGithubSquare />
-                </span>
-              </Link>
-            </li>
-            <li className="link_item">
-              <Link to="/">
-                <span>
-                  <ImLinkedin />
-                </span>
-              </Link>
-            </li>
-            <li className="link_item">
-              <Link to="/">
-                <span>
-                  <FaTwitterSquare />
-                </span>
-              </Link>
-            </li>
-            <li className="link_item">
-              <Link to="/">
-                <span>
-                  <FaFacebookSquare />
-                </span>
-              </Link>
-            </li>
           </div>
         </div>
       </div>
